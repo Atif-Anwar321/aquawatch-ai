@@ -1,0 +1,38 @@
+{
+  "accuracy": 0.6601,
+  "precision": 0.6602,
+  "recall": 0.2656,
+  "f1": 0.3788,
+  "confusion_matrix": {
+    "labels": [
+      "Non-potable (0)",
+      "Potable (1)"
+    ],
+    "matrix": [
+      [
+        365,
+        35
+      ],
+      [
+        188,
+        68
+      ]
+    ]
+  },
+  "test_samples": 656,
+  "train_samples": 2620,
+  "feature_importance": {
+    "ph": 0.1319,
+    "Hardness": 0.1205,
+    "Solids": 0.1143,
+    "Chloramines": 0.1145,
+    "Sulfate": 0.1254,
+    "Conductivity": 0.1017,
+    "Organic_carbon": 0.0988,
+    "Trihalomethanes": 0.0961,
+    "Turbidity": 0.0966
+  },
+  "model": "RandomForestClassifier(n_estimators=200, random_state=42)",
+  "split": "80/20 stratified, random_state=42",
+  "imputation": "median"
+}
